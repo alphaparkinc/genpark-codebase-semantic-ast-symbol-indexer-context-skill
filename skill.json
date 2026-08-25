@@ -1,0 +1,38 @@
+{
+  "name": "genpark-codebase-semantic-ast-symbol-indexer-context-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-file codebase semantic AST symbol indexer and callgraph context builder powering inline speculative diff generation.",
+  "author": "genpark",
+  "category": "ai-ide",
+  "tags": [
+    "ast-indexer",
+    "codebase-context",
+    "callgraph-resolver",
+    "inline-edit",
+    "cursor-ai"
+  ],
+  "inputs": {
+    "active_file": {
+      "type": "string"
+    },
+    "query_symbol": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "index_session_id": {
+      "type": "string"
+    },
+    "resolved_ast_definitions": {
+      "type": "array"
+    },
+    "inline_ai_edit_context_tokens": {
+      "type": "integer"
+    },
+    "multi_file_speculative_diff_ready": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
